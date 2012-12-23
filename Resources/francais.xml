@@ -30,7 +30,7 @@
 		<title>Configuration</title>
 		<label>
 			<language>Langue</language>
-			<ip>Adresse IP</ip>
+			<ip>Adresse IP:Port</ip>
 			<username>Nom d'utilisateur</username>
 			<password>Mot de Passe</password>
 			<showInTray>Afficher dans le system tray</showInTray>

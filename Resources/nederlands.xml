@@ -29,7 +29,7 @@
 		<title>Configuratie</title>
 		<label>
 			<language>taal</language>
-			<ip>ip adres</ip>
+			<ip>ip adres:port</ip>
 			<username>gebruikersnaam</username>
 			<password>wachtwoord</password>
 			<showInTray>Weergeven in systeembalk</showInTray>

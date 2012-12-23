@@ -1,4 +1,4 @@
-﻿<language>
+<language>
 	<mainform>
 		<connection>
 			<none>Impossible de se connecter a XBMC</none>
@@ -30,7 +30,7 @@
 		<title>Configuration</title>
 		<label>
 			<language>Langue</language>
-			<ip>Adresse IP</ip>
+			<ip>Adresse IP:Port</ip>
 			<username>Nom d'utilisateur</username>
 			<password>Mot de Passe</password>
 			<showInTray>Afficher dans le system tray</showInTray>
@@ -42,6 +42,7 @@
 			<runAtStartup>Demarrer l'application au demarrage de Windows</runAtStartup>
 			<startMinimized>Demarrer l'application minimisee</startMinimized>
 			<connectionTimeout>Connexion timeout</connectionTimeout>
+			<showConfigurationAtStart>Show this screen at startup</showConfigurationAtStart>
 		</label>
 		<language>
 			<noLanguages>Aucun fichier de langue trouve</noLanguages>

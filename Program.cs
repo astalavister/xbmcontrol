@@ -14,7 +14,10 @@ namespace XBMControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            
+            MainForm mainForm = new MainForm();
+            if (mainForm != null && !mainForm.IsDisposed)
+                Application.Run(mainForm);
         }
     }
 }

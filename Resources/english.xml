@@ -31,7 +31,7 @@
 		<title>Configuration</title>
 		<label>
 			<language>language</language>
-			<ip>ip address</ip>
+			<ip>ip address:port</ip>
 			<username>username</username>
 			<password>password</password>
 			<showInTray>Show in systemtray</showInTray>
