@@ -41,11 +41,12 @@ namespace XBMControl.Language
 
         public string[] GetAvailableLanguages()
         {
-            string[] languages = new string[3];
+            string[] languages = new string[4];
 
             languages[0] = "english";
             languages[1] = "francais";
             languages[2] = "nederlands";
+            languages[3] = "german";
             return languages;
         }
 
@@ -59,6 +60,8 @@ namespace XBMControl.Language
                 tempString = global::XBMControl.Properties.Resources.francais;
             else if (language == "nederlands")
                 tempString = global::XBMControl.Properties.Resources.nederlands;
+            else if (language == "german")
+                tempString = global::XBMControl.Properties.Resources.german;
             else
                 tempString = global::XBMControl.Properties.Resources.english;
 

@@ -14,13 +14,15 @@
 			<paused>Afspelen gepauseerd</paused>
 		</playing>
 		<dialog>
-			<lastfmLoveTitle>Last.FM Love track</lastfmLoveTitle>
-			<lastfmLove>This will add the currently playing track to your personal 'Loved tracks' on Last.FM.\n\nAre you sure you want to do this?</lastfmLove>
-			<lastfmHateTitle>Last.FM Hate track</lastfmHateTitle>
-			<lastfmHate>This will add the currently playing song to your 'Banned tracks' list.\nThe song will never be played again when listening to Last.FM streamed radio.\n\nAre you sure you want to do this?</lastfmHate>
-			<ipNotConfiguredTitle>No ip address configured</ipNotConfiguredTitle>
-			<unableToConnectTitle>Can't connect with XBMC</unableToConnectTitle>
-			<unableToConnect>Please make sure XBMC is running and the ip address is correct.</unableToConnect>
+			<lastfmLoveTitle>Last.FM nummer waarderen</lastfmLoveTitle>
+			<lastfmLove>Dit zal het nu spelende nummer toevoegen aan je persoonlijke 'Gewaardeerde nummers' op Last.FM.\n\nWeet je zeker dat je door wilt gaan?</lastfmLove>
+			<lastfmHateTitle>Last.FM nummer verbannen</lastfmHateTitle>
+			<lastfmHate>Dit zal het nu spelende nummer toevoegen aan je persoonlijke lijst 'Verbannen nummers' op Last.FM.\nHet nummer zal nooit meer voorbij komen wanneer je luister naar Last.FM radio.\n\nWeet je zeker dat je door wilt gaan?</lastfmHate>
+			<ipNotConfiguredTitle>Geen ip adres geconfigureerd</ipNotConfiguredTitle>
+			<unableToConnectTitle>Kan niet verbinden met XBMC</unableToConnectTitle>
+			<unableToConnect>Verifieer a.u.b. dat XBMC is opgestart en het ip adres klopt</unableToConnect>
+			<webserverDisabledTitle>XBMC web server disabled</webserverDisabledTitle>
+			<webserverDisabled>The internal XBMC web server is disbaled.\nWithout it being enabled XBMControl can't function properly.\n\nXBMControl will be closed now.</webserverDisabled>
 		</dialog>
 	</mainform>
 	<configuration>
@@ -37,10 +39,10 @@
 			<showPlayStatusWindow>Laat 'speelt nu' venster zien</showPlayStatusWindow>
 			<showConnectionStatusBalloonTip>Laat verbindingsstatus in ballontips zien</showConnectionStatusBalloonTip>
 			<runAtStartup>Uitvoeren bij opstarten Windows</runAtStartup>
-			<startMinimized>Start application minimized</startMinimized>
+			<startMinimized>Start applicatie geminimaliseerd</startMinimized>
 			<connectionTimeout>Verbinding timeout</connectionTimeout>
-      <showConfigurationAtStart>Show this screen at startup</showConfigurationAtStart>
-    </label>
+			<showConfigurationAtStart>Show this screen at startup</showConfigurationAtStart>
+		</label>
 		<language>
 			<noLanguages>Geen taalbestanden gevonden</noLanguages>
 		</language>

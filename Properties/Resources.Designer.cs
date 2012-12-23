@@ -553,6 +553,32 @@ namespace XBMControl.Properties {
             }
         }
         
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;language&gt;
+        ///	&lt;mainform&gt;
+        ///		&lt;connection&gt;
+        ///			&lt;none&gt;Kann nicht zu XBMC verbinden&lt;/none&gt;
+        ///		&lt;/connection&gt;
+        ///		&lt;label&gt;
+        ///			&lt;artist&gt;Künstler&lt;/artist&gt;
+        ///			&lt;title&gt;Titel&lt;/title&gt;
+        ///			&lt;album&gt;Album&lt;/album&gt;
+        ///		&lt;/label&gt;
+        ///		&lt;playing&gt;
+        ///			&lt;nothing&gt;Es werden keine Mediendateien abgespielt&lt;/nothing&gt;
+        ///			&lt;now&gt;Spiele &lt;/now&gt;
+        ///			&lt;paused&gt;Abspielen angehalten&lt;/paused&gt;
+        ///		&lt;/playing&gt;
+        ///		&lt;dialog&gt;
+        ///			&lt;lastfmLoveTitle&gt;Last.FM Love track&lt;/lastfmLoveTitle&gt;
+        ///			&lt;lastfmLove&gt;This will add the currently playing track to your personal &apos;Love [rest of string was truncated]&quot;; ähnelt.
+        /// </summary>
+        internal static string german {
+            get {
+                return ResourceManager.GetString("german", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap hide_16x16 {
             get {
                 object obj = ResourceManager.GetObject("hide_16x16", resourceCulture);

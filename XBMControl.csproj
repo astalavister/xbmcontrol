@@ -376,6 +376,7 @@
     <None Include="Resources\navigator_numpad_6.png" />
     <None Include="Resources\navigator_numpad_7.png" />
     <None Include="Resources\navigator_numpad_8.png" />
+    <None Include="Resources\german.xml" />
     <Content Include="XBMC.ico" />
     <Content Include="Xbox.ico" />
   </ItemGroup>
