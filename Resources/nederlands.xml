@@ -22,7 +22,7 @@
 			<unableToConnectTitle>Kan niet verbinden met XBMC</unableToConnectTitle>
 			<unableToConnect>Verifieer a.u.b. dat XBMC is opgestart en het ip adres klopt</unableToConnect>
 			<webserverDisabledTitle>XBMC web server disabled</webserverDisabledTitle>
-			<webserverDisabled>The internal XBMC web server is disbaled.\nWithout it being enabled XBMControl can't function properly.\n\nXBMControl will be closed now.</webserverDisabled>
+			<webserverDisabled>The internal XBMC web server is disbaled.\nWithout it being enabled XBMControl can't function properly.\n\nContinue anyway?</webserverDisabled>
 		</dialog>
 	</mainform>
 	<configuration>

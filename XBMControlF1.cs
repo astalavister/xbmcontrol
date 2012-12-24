@@ -89,11 +89,20 @@ namespace XBMControl
             {
                 if (!XBMC.Status.WebServerEnabled())
                 {
-                    MessageBox.Show(Language.GetString("mainform/dialog/webserverDisabled"), Language.GetString("mainform/dialog/webserverDisabledTitle"));
-                    this.Dispose();
+                    // Webserver inactive: Ask for continue (default is no)
+                    DialogResult dlgRet = MessageBox.Show(Language.GetString("mainform/dialog/webserverDisabled"),
+                        Language.GetString("mainform/dialog/webserverDisabledTitle"), 
+                        MessageBoxButtons.YesNo, 
+                        MessageBoxIcon.None, 
+                        MessageBoxDefaultButton.Button2);
+                    if (dlgRet == DialogResult.No)
+                    {
+                        this.Dispose();
+                        return;
+                    }
                 }
-                else
-                    updateTimer.Enabled = true;
+                
+                updateTimer.Enabled = true;
             }
             else
             {
