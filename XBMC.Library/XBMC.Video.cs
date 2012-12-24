@@ -70,14 +70,12 @@ namespace XBMC
             string[] downloadData;
             string ipString;
             string[] fileExist;
-            Image thumbnail = null;
-            WebClient client = new WebClient();
+            Image retThumbnail = Resources.video_32x32;
+
             string condition = (videoID == null) ? "" : " WHERE C09 LIKE '%%" + videoID + "%%'";
             strPath = parent.Request("QueryVideoDatabase", "SELECT strpath FROM movieview " + condition);
             hashName = Hash(strPath[0] + "VIDEO_TS.IFO");
-
             ipString = "P:\\Thumbnails\\Video\\" + hashName[0] + "\\" + hashName + ".tbn";
-
             fileExist = parent.Request("FileExists", ipString);
 
             if (fileExist[0] == "True")
@@ -93,19 +91,12 @@ namespace XBMC
 
                     // Convert byte[] to Image
                     ms.Write(imageBytes, 0, imageBytes.Length);
-                    thumbnail = Image.FromStream(ms, true);
+                    retThumbnail = Image.FromStream(ms, true);
                 }
-                catch (Exception e)
-                {
-                    thumbnail = Resources.video_32x32;
-                }
-            }
-            else
-            {
-                thumbnail = Resources.video_32x32;
+                catch { }
             }
 
-            return thumbnail;
+            return retThumbnail;
         }
 
         public string GetVideoPath(string movieName)
