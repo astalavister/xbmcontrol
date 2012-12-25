@@ -50,7 +50,7 @@
             this.cmsXBMCshutdown = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsView = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsViewPlaylist = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsMediaBrowser = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsViewMediaBrowser = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSeperatorFolders = new System.Windows.Forms.ToolStripSeparator();
             this.cmsSaveMedia = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSeperatorSaveSend = new System.Windows.Forms.ToolStripSeparator();
@@ -161,7 +161,7 @@
             this.toolStripSeparator3,
             this.cmsExit});
             this.MainContextMenu.Name = "cmsNotifyIcon";
-            this.MainContextMenu.Size = new System.Drawing.Size(108, 204);
+            this.MainContextMenu.Size = new System.Drawing.Size(153, 226);
             this.MainContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.MainContextMenu_Opening);
             // 
             // cmsControls
@@ -175,48 +175,48 @@
             this.cmsMute});
             this.cmsControls.Image = ((System.Drawing.Image)(resources.GetObject("cmsControls.Image")));
             this.cmsControls.Name = "cmsControls";
-            this.cmsControls.Size = new System.Drawing.Size(107, 22);
+            this.cmsControls.Size = new System.Drawing.Size(152, 22);
             // 
             // cmsPrevious
             // 
             this.cmsPrevious.Image = ((System.Drawing.Image)(resources.GetObject("cmsPrevious.Image")));
             this.cmsPrevious.Name = "cmsPrevious";
-            this.cmsPrevious.Size = new System.Drawing.Size(78, 22);
+            this.cmsPrevious.Size = new System.Drawing.Size(67, 22);
             this.cmsPrevious.Click += new System.EventHandler(this.cmsNotifyPrevious_Click);
             // 
             // cmsPlay
             // 
             this.cmsPlay.Image = ((System.Drawing.Image)(resources.GetObject("cmsPlay.Image")));
             this.cmsPlay.Name = "cmsPlay";
-            this.cmsPlay.Size = new System.Drawing.Size(78, 22);
+            this.cmsPlay.Size = new System.Drawing.Size(67, 22);
             this.cmsPlay.Click += new System.EventHandler(this.cmsNotifyPlay_Click);
             // 
             // cmsPause
             // 
             this.cmsPause.Image = ((System.Drawing.Image)(resources.GetObject("cmsPause.Image")));
             this.cmsPause.Name = "cmsPause";
-            this.cmsPause.Size = new System.Drawing.Size(78, 22);
+            this.cmsPause.Size = new System.Drawing.Size(67, 22);
             this.cmsPause.Click += new System.EventHandler(this.cmsNotifyPause_Click);
             // 
             // cmsStop
             // 
             this.cmsStop.Image = ((System.Drawing.Image)(resources.GetObject("cmsStop.Image")));
             this.cmsStop.Name = "cmsStop";
-            this.cmsStop.Size = new System.Drawing.Size(78, 22);
+            this.cmsStop.Size = new System.Drawing.Size(67, 22);
             this.cmsStop.Click += new System.EventHandler(this.cmsNotifyStop_Click);
             // 
             // cmsNext
             // 
             this.cmsNext.Image = ((System.Drawing.Image)(resources.GetObject("cmsNext.Image")));
             this.cmsNext.Name = "cmsNext";
-            this.cmsNext.Size = new System.Drawing.Size(78, 22);
+            this.cmsNext.Size = new System.Drawing.Size(67, 22);
             this.cmsNext.Click += new System.EventHandler(this.cmsNotifyNext_Click);
             // 
             // cmsMute
             // 
             this.cmsMute.Image = ((System.Drawing.Image)(resources.GetObject("cmsMute.Image")));
             this.cmsMute.Name = "cmsMute";
-            this.cmsMute.Size = new System.Drawing.Size(78, 22);
+            this.cmsMute.Size = new System.Drawing.Size(67, 22);
             this.cmsMute.Click += new System.EventHandler(this.cmsNotifyMute_Click);
             // 
             // cmsXBMC
@@ -230,127 +230,124 @@
             this.cmsXBMCshutdown});
             this.cmsXBMC.Image = ((System.Drawing.Image)(resources.GetObject("cmsXBMC.Image")));
             this.cmsXBMC.Name = "cmsXBMC";
-            this.cmsXBMC.Size = new System.Drawing.Size(107, 22);
+            this.cmsXBMC.Size = new System.Drawing.Size(152, 22);
             // 
             // cmsSendMediaUrl
             // 
             this.cmsSendMediaUrl.Image = ((System.Drawing.Image)(resources.GetObject("cmsSendMediaUrl.Image")));
             this.cmsSendMediaUrl.Name = "cmsSendMediaUrl";
-            this.cmsSendMediaUrl.Size = new System.Drawing.Size(78, 22);
+            this.cmsSendMediaUrl.Size = new System.Drawing.Size(67, 22);
             this.cmsSendMediaUrl.Click += new System.EventHandler(this.cmsSendMediaUrl_Click);
             // 
             // cmsShowScreenshot
             // 
             this.cmsShowScreenshot.Image = ((System.Drawing.Image)(resources.GetObject("cmsShowScreenshot.Image")));
             this.cmsShowScreenshot.Name = "cmsShowScreenshot";
-            this.cmsShowScreenshot.Size = new System.Drawing.Size(78, 22);
+            this.cmsShowScreenshot.Size = new System.Drawing.Size(67, 22);
             this.cmsShowScreenshot.Click += new System.EventHandler(this.cmsShowScreenshot_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(75, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(64, 6);
             // 
             // cmsXBMCrestart
             // 
             this.cmsXBMCrestart.Image = ((System.Drawing.Image)(resources.GetObject("cmsXBMCrestart.Image")));
             this.cmsXBMCrestart.Name = "cmsXBMCrestart";
-            this.cmsXBMCrestart.Size = new System.Drawing.Size(78, 22);
+            this.cmsXBMCrestart.Size = new System.Drawing.Size(67, 22);
             this.cmsXBMCrestart.Click += new System.EventHandler(this.cmsXBMCrebootXBMC_Click);
             // 
             // cmsXBMCreboot
             // 
             this.cmsXBMCreboot.Image = ((System.Drawing.Image)(resources.GetObject("cmsXBMCreboot.Image")));
             this.cmsXBMCreboot.Name = "cmsXBMCreboot";
-            this.cmsXBMCreboot.Size = new System.Drawing.Size(78, 22);
+            this.cmsXBMCreboot.Size = new System.Drawing.Size(67, 22);
             this.cmsXBMCreboot.Click += new System.EventHandler(this.cmsXBMCrebootComputer_Click);
             // 
             // cmsXBMCshutdown
             // 
             this.cmsXBMCshutdown.Image = ((System.Drawing.Image)(resources.GetObject("cmsXBMCshutdown.Image")));
             this.cmsXBMCshutdown.Name = "cmsXBMCshutdown";
-            this.cmsXBMCshutdown.Size = new System.Drawing.Size(78, 22);
+            this.cmsXBMCshutdown.Size = new System.Drawing.Size(67, 22);
             this.cmsXBMCshutdown.Click += new System.EventHandler(this.cmsXBMCshutdown_Click);
             // 
             // cmsView
             // 
             this.cmsView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsViewPlaylist,
-            this.cmsMediaBrowser});
+            this.cmsViewMediaBrowser});
             this.cmsView.Image = ((System.Drawing.Image)(resources.GetObject("cmsView.Image")));
             this.cmsView.Name = "cmsView";
-            this.cmsView.Size = new System.Drawing.Size(107, 22);
-            this.cmsView.Text = "View";
+            this.cmsView.Size = new System.Drawing.Size(152, 22);
             // 
             // cmsViewPlaylist
             // 
             this.cmsViewPlaylist.Name = "cmsViewPlaylist";
-            this.cmsViewPlaylist.Size = new System.Drawing.Size(155, 22);
-            this.cmsViewPlaylist.Text = "Playlist";
+            this.cmsViewPlaylist.Size = new System.Drawing.Size(152, 22);
             this.cmsViewPlaylist.Click += new System.EventHandler(this.cmsViewPlaylist_Click);
             // 
-            // cmsMediaBrowser
+            // cmsViewMediaBrowser
             // 
-            this.cmsMediaBrowser.Name = "cmsMediaBrowser";
-            this.cmsMediaBrowser.Size = new System.Drawing.Size(155, 22);
-            this.cmsMediaBrowser.Text = "Media browser";
-            this.cmsMediaBrowser.Click += new System.EventHandler(this.cmsMediaBrowser_Click);
+            this.cmsViewMediaBrowser.Name = "cmsViewMediaBrowser";
+            this.cmsViewMediaBrowser.Size = new System.Drawing.Size(152, 22);
+            this.cmsViewMediaBrowser.Click += new System.EventHandler(this.cmsViewMediaBrowser_Click);
             // 
             // cmsSeperatorFolders
             // 
             this.cmsSeperatorFolders.Name = "cmsSeperatorFolders";
-            this.cmsSeperatorFolders.Size = new System.Drawing.Size(104, 6);
+            this.cmsSeperatorFolders.Size = new System.Drawing.Size(149, 6);
             // 
             // cmsSaveMedia
             // 
             this.cmsSaveMedia.Image = ((System.Drawing.Image)(resources.GetObject("cmsSaveMedia.Image")));
             this.cmsSaveMedia.Name = "cmsSaveMedia";
-            this.cmsSaveMedia.Size = new System.Drawing.Size(107, 22);
+            this.cmsSaveMedia.Size = new System.Drawing.Size(152, 22);
             this.cmsSaveMedia.Visible = false;
             this.cmsSaveMedia.Click += new System.EventHandler(this.cmsSaveMedia_Click);
             // 
             // cmsSeperatorSaveSend
             // 
             this.cmsSeperatorSaveSend.Name = "cmsSeperatorSaveSend";
-            this.cmsSeperatorSaveSend.Size = new System.Drawing.Size(104, 6);
+            this.cmsSeperatorSaveSend.Size = new System.Drawing.Size(149, 6);
             this.cmsSeperatorSaveSend.Visible = false;
             // 
             // cmsShow
             // 
             this.cmsShow.Image = ((System.Drawing.Image)(resources.GetObject("cmsShow.Image")));
             this.cmsShow.Name = "cmsShow";
-            this.cmsShow.Size = new System.Drawing.Size(107, 22);
+            this.cmsShow.Size = new System.Drawing.Size(152, 22);
             this.cmsShow.Click += new System.EventHandler(this.cmsNotifyShow_Click);
             // 
             // cmsHide
             // 
             this.cmsHide.Image = ((System.Drawing.Image)(resources.GetObject("cmsHide.Image")));
             this.cmsHide.Name = "cmsHide";
-            this.cmsHide.Size = new System.Drawing.Size(107, 22);
+            this.cmsHide.Size = new System.Drawing.Size(152, 22);
             this.cmsHide.Click += new System.EventHandler(this.cmsNotifyHide_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // cmsConfigure
             // 
             this.cmsConfigure.Image = ((System.Drawing.Image)(resources.GetObject("cmsConfigure.Image")));
             this.cmsConfigure.Name = "cmsConfigure";
-            this.cmsConfigure.Size = new System.Drawing.Size(107, 22);
+            this.cmsConfigure.Size = new System.Drawing.Size(152, 22);
             this.cmsConfigure.Click += new System.EventHandler(this.cmsConfigure_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // cmsExit
             // 
             this.cmsExit.Image = ((System.Drawing.Image)(resources.GetObject("cmsExit.Image")));
             this.cmsExit.Name = "cmsExit";
-            this.cmsExit.Size = new System.Drawing.Size(107, 22);
+            this.cmsExit.Size = new System.Drawing.Size(152, 22);
             this.cmsExit.Click += new System.EventHandler(this.cmsNotifyExit_Click);
             // 
             // pDetails
@@ -1172,7 +1169,7 @@
         private System.Windows.Forms.Button bLastFmLove;
         private System.Windows.Forms.ToolStripMenuItem cmsView;
         private System.Windows.Forms.ToolStripMenuItem cmsViewPlaylist;
-        private System.Windows.Forms.ToolStripMenuItem cmsMediaBrowser;
+        private System.Windows.Forms.ToolStripMenuItem cmsViewMediaBrowser;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button bPlaylist;
         private System.Windows.Forms.Button bNavigator;

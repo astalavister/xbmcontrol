@@ -70,6 +70,11 @@
 			<restart>Herstart XBMC</restart>
 			<shutdown>Uitzetten</shutdown>
 		</xbmc>
+		<view>
+			<title>View</title>
+			<playlist>Playlist</playlist>
+			<mediabrowser>Media browser</mediabrowser>
+		</view>
 		<saveMedia>Media opslaan</saveMedia>
 		<show>Weergeven</show>
 		<hide>Verbergen</hide>

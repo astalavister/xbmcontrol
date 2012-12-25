@@ -71,6 +71,11 @@
 			<restart>Redemarrer XBMC</restart>
 			<shutdown>Eteindre</shutdown>
 		</xbmc>
+		<view>
+			<title>View</title>
+			<playlist>Playlist</playlist>
+			<mediabrowser>Media browser</mediabrowser>
+		</view>
 		<saveMedia>Sauvegarder le media</saveMedia>
 		<show>Afficher</show>
 		<hide>Cacher</hide>

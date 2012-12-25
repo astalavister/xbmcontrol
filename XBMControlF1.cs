@@ -176,6 +176,9 @@ namespace XBMControl
             cmsXBMCreboot.Text = Language.GetString("contextMenu/xbmc/reboot");
             cmsXBMCrestart.Text = Language.GetString("contextMenu/xbmc/restart");
             cmsXBMCshutdown.Text = Language.GetString("contextMenu/xbmc/shutdown");
+            cmsView.Text = Language.GetString("contextMenu/view/title");
+            cmsViewPlaylist.Text = Language.GetString("contextMenu/view/playlist");
+            cmsViewMediaBrowser.Text = Language.GetString("contextMenu/view/mediabrowser");
             cmsSaveMedia.Text = Language.GetString("contextMenu/saveMedia");
             cmsShow.Text = Language.GetString("contextMenu/show");
             cmsHide.Text = Language.GetString("contextMenu/hide");
@@ -1156,7 +1159,7 @@ namespace XBMControl
         }
 //END FAKE DRAG DROP
 
-        private void cmsMediaBrowser_Click(object sender, EventArgs e)
+        private void cmsViewMediaBrowser_Click(object sender, EventArgs e)
         {
             this.bOpen_MouseDown(null, null);
         }

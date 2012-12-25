@@ -431,7 +431,7 @@ xcopy "$(ProjectDir)Resources\*.xml" "$(ProjectDir)$(OutDir)language\" /y
 if $(ConfigurationName) == Debug goto :exit
 
 rmdir "$(ProjectDir)XBMControl Setup\language" /s /q
-xcopy "$(ProjectDir)Resources\*" "$(ProjectDir)XBMControl Setup\language\" /y
+xcopy "$(ProjectDir)Resources\*.xml" "$(ProjectDir)XBMControl Setup\language\" /y
 
 rmdir "$(ProjectDir)XBMControl Portable\XBMControl\language" /s /q
 xcopy "$(ProjectDir)Resources\*.xml" "$(ProjectDir)XBMControl Portable\XBMControl\language\" /y
