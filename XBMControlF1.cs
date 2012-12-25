@@ -141,11 +141,13 @@ namespace XBMControl
 
         internal void ApplySettings()
         {
-            XBMC.SetIp(Settings.Default.Ip);
             XBMC.SetConnectionTimeout(Settings.Default.ConnectionTimeout);
             XBMC.SetCredentials(Settings.Default.Username, Settings.Default.Password);
+            XBMC.SetIp(Settings.Default.Ip);
+
             Language.SetLanguage(Settings.Default.Language);
             notifyIcon1.Visible = Settings.Default.ShowInSystemTray;
+            
             this.Visible = Settings.Default.ShowInTaskbar;
             this.WindowState = (Settings.Default.StartMinimized) ? FormWindowState.Minimized : FormWindowState.Normal;
             this.SetLanguageStrings();

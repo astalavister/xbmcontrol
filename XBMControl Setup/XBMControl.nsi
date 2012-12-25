@@ -53,6 +53,7 @@ SetCompressor lzma
 !insertmacro MUI_LANGUAGE "Dutch"
 !insertmacro MUI_LANGUAGE "English"
 !insertmacro MUI_LANGUAGE "French"
+!insertmacro MUI_LANGUAGE "German"
 
 ; MUI end ------
 
@@ -96,6 +97,7 @@ Section "MainSection" SEC01
   File "language\nederlands.xml"
   File "language\english.xml"
   File "language\francais.xml"
+  File "language\german.xml"
   SetOutPath "$INSTDIR\log"
 SectionEnd
 
@@ -132,6 +134,7 @@ Section Uninstall
   Delete "$INSTDIR\language\english.xml"
   Delete "$INSTDIR\language\nederlands.xml"
   Delete "$INSTDIR\language\francais.xml"
+  Delete "$INSTDIR\language\german.xml"
   Delete "$INSTDIR\XBMControl.exe"
 
   Delete "$SMPROGRAMS\XBMControl\Uninstall.lnk"

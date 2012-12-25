@@ -13,6 +13,10 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>XBMC.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,11 +29,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkSubset>
-    </TargetFrameworkSubset>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -423,4 +424,18 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>rmdir "$(ProjectDir)$(OutDir)language" /s /q
+xcopy "$(ProjectDir)Resources\*.xml" "$(ProjectDir)$(OutDir)language\" /y
+
+if $(ConfigurationName) == Debug goto :exit
+
+rmdir "$(ProjectDir)XBMControl Setup\language" /s /q
+xcopy "$(ProjectDir)Resources\*" "$(ProjectDir)XBMControl Setup\language\" /y
+
+rmdir "$(ProjectDir)XBMControl Portable\XBMControl\language" /s /q
+xcopy "$(ProjectDir)Resources\*.xml" "$(ProjectDir)XBMControl Portable\XBMControl\language\" /y
+
+:exit</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -166,19 +166,23 @@ namespace XBMControl
 
         private void bCancel_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             if( tbIp.Text == "" )
                 MessageBox.Show(parent.Language.GetString("configuration/ipAddress/required"));
             else
                 Close();
+            this.Cursor = Cursors.Default;
         }
 
         private void bConfirm_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             if (IsValidIp())
             {
                 this.SaveConfiguration();
                 this.Close();
             }
+            this.Cursor = Cursors.Default;
         }
 
         private void cbShowInTray_Click(object sender, EventArgs e)

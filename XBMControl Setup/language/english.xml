@@ -23,13 +23,15 @@
 			<unableToConnectTitle>Can't connect with XBMC</unableToConnectTitle>
 			<unableToConnect>Please make sure XBMC is running and the ip address is correct.</unableToConnect>
 			<proceedMessage>Are you sure you want to proceed?</proceedMessage>
+			<webserverDisabledTitle>XBMC web server disabled</webserverDisabledTitle>
+			<webserverDisabled>The internal XBMC web server is disabled.\nWithout it being enabled XBMControl can't function properly.\n\nContinue anyway?</webserverDisabled>
 		</dialog>
 	</mainform>
 	<configuration>
 		<title>Configuration</title>
 		<label>
 			<language>language</language>
-			<ip>ip address</ip>
+			<ip>ip address:port</ip>
 			<username>username</username>
 			<password>password</password>
 			<showInTray>Show in systemtray</showInTray>
@@ -41,6 +43,7 @@
 			<runAtStartup>Run at windows startup</runAtStartup>
 			<startMinimized>Start application minimized</startMinimized>
 			<connectionTimeout>Connetion timeout</connectionTimeout>
+			<showConfigurationAtStart>Show this screen at startup</showConfigurationAtStart>
 		</label>
 		<language>
 			<noLanguages>No language files found</noLanguages>
